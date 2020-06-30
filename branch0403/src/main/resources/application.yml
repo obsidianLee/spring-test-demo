@@ -1,0 +1,64 @@
+spring:
+#  jackson:
+#    time-zone: GMT+8
+#  servlet:
+#    multipart:
+#       max-file-size: 20MB
+#       max-request-size: 20MB
+#  application:
+#    name: gradle-damo
+#  redis:
+#     database: 0
+#     host: 127.0.0.1
+#     port: 6379
+#     password:
+#     pool:
+#        max-active: 200
+#        max-wait: -1
+#        max-idle: 10
+#        min-idle: 0
+#     timeout: 1000
+  datasource:
+    url: jdbc:mysql://localhost:3306/lxq?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      read-only: false
+      connection-timeout: 60000
+      idle-timeout: 60000
+      validation-timeout: 3000
+      max-lifetime: 60000
+      login-timeout: 5
+      maximum-pool-size: 60
+      minimum-idle: 10
+#  jpa:
+#    database: mysql
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: none
+#      naming:
+#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+#  security:
+#    user:
+#      name: root
+#      password: root
+server:
+    port: 8110
+
+#system:
+#    sys-sim-name: ewallet
+#    uploadfile-route: c:\com
+#    banklink-key: 0eb42b4556c244d7a8a1d71923bfa48b
+#    banklink-token: TK999F2066A73434315DCD9346811A5C14
+#    sms-business-code: E-LOAN-RepaymentWarn
+#    sms-client-system: ewallet
+#    sms-business-key: e329b7ba74714911b24c355d0a91bf49
+#    sms-server-url: http://10.100.249.55:37802/api/Sms/SendSms
+#    sms-code-switch: false
+
+
+#jpush:
+#  url: 10.105.136.241
+#  appKey: 20e6c72191f05720d4dca066
+#  masterSecret: e73c60cd4893be79ff4dbd32
